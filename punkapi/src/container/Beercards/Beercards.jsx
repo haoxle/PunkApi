@@ -10,6 +10,8 @@ const Beercards = (props) => {
       name={beer.name}
       image={beer.image_url}
       description={beer.description}
+      abv={beer.abv}
+      brewed={beer.first_brewed}
     />
   ));
 
