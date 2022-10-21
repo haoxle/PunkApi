@@ -1,0 +1,22 @@
+.beer-container {
+  height: 300px;
+  width: 150px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .beer-container__name {
+    font-size: 15px;
+    border: 1px solid green;
+  }
+
+  .beer-container_pic {
+    height: 100px;
+    width: 50px;
+    border: 1px solid blue;
+  }
+  .beer-container_desc {
+    overflow-y: scroll;
+  }
+}
