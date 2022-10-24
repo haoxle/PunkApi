@@ -3,7 +3,7 @@ import "./App.css";
 import Beercards from "./container/Beercards/Beercards";
 import Nav from "./container/Nav/Nav";
 // import beers from "./data/beer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 // import Button from "./components/Button/Button";
 
 const App = () => {
@@ -38,12 +38,14 @@ const App = () => {
     if (ABV) {
       return alcohol.abv > 6.0;
     } else if (classic) {
-      return alcohol.first_brewed.substring(3, 7) < "2010";
+      return alcohol.first_brewed.slice(3) < 2010;
     } else if (ph) {
       return alcohol.ph > 4;
     } else return alcohol.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
-  getBeers();
+  useEffect(() => {
+    getBeers();
+  }, []);
 
   return (
     <>
