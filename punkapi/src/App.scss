@@ -4,16 +4,14 @@
 }
 .container {
   display: flex;
-  height: 100%;
+  flex-direction: column;
   width: 100%;
-  border: 1px solid black;
 
   .container_beercards {
     border: 1px solid pink;
   }
   .container_nav {
-    height: 50vh;
-    background-color: black;
-    border: 1px solid grey;
+    height: 200px;
+    background-color: grey;
   }
 }

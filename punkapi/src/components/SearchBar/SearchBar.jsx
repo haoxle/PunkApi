@@ -1,9 +1,9 @@
 import "./SearchBar.scss";
-
+import magnifier from "../../images/magnifier.png";
 const Beercards = (props) => {
   const { searchTerm, handleInput } = props;
   return (
-    <form>
+    <form className="searchBar">
       <label htmlFor="search"></label>
       <input
         className="searchBar__input"
@@ -12,6 +12,7 @@ const Beercards = (props) => {
         onInput={handleInput}
         value={searchTerm}
       />
+      <img className="searchBar__magnify" src={magnifier} alt="magnify" />
     </form>
   );
 };

@@ -1,0 +1,24 @@
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  background: white;
+  position: relative;
+  border-radius: 100px;
+  height: 30px;
+  border: 2px solid black;
+}
+.searchBar__magnify {
+  object-fit: cover;
+  background: transparent;
+  margin-right: 15px;
+  height: 20px;
+  padding-top: 5px;
+}
+.searchBar__input {
+  border: none;
+  padding-left: 10px;
+  border-radius: 100px;
+  outline: none;
+  width: 100px;
+}
