@@ -11,6 +11,7 @@ const App = () => {
   const [beers, setBeers] = useState([]);
   const [ABV, setABV] = useState(false);
   const [classic, setClassic] = useState(false);
+  const [ph, setPh] = useState(false);
 
   const url = "https://api.punkapi.com/v2/beers";
   const getBeers = async () => {
@@ -29,13 +30,16 @@ const App = () => {
   const getClassic = () => {
     setClassic(!classic);
   };
-  const highAlcohol = beers.filter((ber) => ber.abv >= 6);
-
+  const getPh = () => {
+    setPh(!ph);
+  };
   // console.log(highAlcohol);
   const filteredAlcohol = beers.filter((alcohol) => {
     if (ABV) {
       return alcohol.abv > 6.0;
     } else if (classic) {
+      return alcohol.first_brewed.substring(3, 7) < "2010";
+    } else if (ph) {
       return alcohol.ph > 4;
     } else return alcohol.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
@@ -52,6 +56,8 @@ const App = () => {
             ABV={ABV}
             getClassic={getClassic}
             classic={classic}
+            getPh={getPh}
+            ph={ph}
           />
         </div>
         <div className="container_beercards">

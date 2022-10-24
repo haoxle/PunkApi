@@ -2,7 +2,16 @@ import "./Nav.scss";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Checkbox from "../../components/Checkbox/Checkbox";
 
-const Nav = ({ handleInput, searchTerm, getABV, ABV, classic, getClassic }) => {
+const Nav = ({
+  handleInput,
+  searchTerm,
+  getABV,
+  ABV,
+  classic,
+  getClassic,
+  getPh,
+  ph,
+}) => {
   return (
     <div className="navigation">
       <SearchBar handleInput={handleInput} searchTerm={searchTerm} />
@@ -17,7 +26,7 @@ const Nav = ({ handleInput, searchTerm, getABV, ABV, classic, getClassic }) => {
         </label>
         <label>
           {"Acidic > pH 4"}
-          <Checkbox />
+          <input type="checkbox" value={ph} onClick={getPh} />
         </label>
       </div>
     </div>

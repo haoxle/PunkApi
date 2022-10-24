@@ -10,6 +10,7 @@ const Beercards = ({ beerArr }) => {
       description={beer.description}
       abv={beer.abv}
       brewed={beer.first_brewed}
+      pH={beer.ph}
     />
   ));
 
