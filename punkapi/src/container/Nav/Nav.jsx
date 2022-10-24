@@ -2,19 +2,18 @@ import "./Nav.scss";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import Checkbox from "../../components/Checkbox/Checkbox";
 
-const Nav = (props) => {
-  const { handleInput, searchTerm } = props;
+const Nav = ({ handleInput, searchTerm, getABV, ABV, classic, getClassic }) => {
   return (
     <div className="navigation">
       <SearchBar handleInput={handleInput} searchTerm={searchTerm} />
       <div className="checkbox">
         <label className="checkbox__ABV">
           {"High ABV > 6.0%"}
-          <Checkbox />
+          <input type="checkbox" value={ABV} onClick={getABV} />
         </label>
         <label>
           Classic
-          <Checkbox />
+          <input type="checkbox" value={classic} onClick={getClassic} />
         </label>
         <label>
           {"Acidic > pH 4"}
