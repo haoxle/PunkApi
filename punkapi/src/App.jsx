@@ -3,11 +3,17 @@ import "./App.css";
 import Beercards from "./container/Beercards/Beercards";
 import Nav from "./container/Nav/Nav";
 import { useState, useEffect } from "react";
+import scotland from "./images/scotland.jpg";
 // import Button from "./components/Button/Button";
+import clockwork from "./images/clockwork.jpg";
+import main from "./images/main.jpg";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [beers, setBeers] = useState([]);
+  const [abv, setAbv] = useState(false);
+  const [year, setYear] = useState(false);
+  const [acid, setAcid] = useState(false);
 
   const url = "https://api.punkapi.com/v2/beers";
   const getBeers = async () => {
@@ -20,27 +26,36 @@ const App = () => {
     setSearchTerm(event.target.value);
   };
 
-  const handleCheckBox = (event) => {
-    if (event.target.checked) {
-      if (event.target.value === "ABV") {
-        setBeers(beers.filter((beer) => beer.abv > 6));
-      } else if (event.target.value === "classic") {
-        setBeers(beers.filter((beer) => beer.first_brewed.slice(3) < 2010));
-      } else if (event.target.value === "ph") {
-        setBeers(beers.filter((beer) => beer.ph < 4));
-      }
-    } else {
-      return getBeers();
-    }
-  };
-
   const filteredAlcohol = beers.filter((alcohol) => {
     return alcohol.name.toLowerCase().includes(searchTerm.toLowerCase());
   });
 
   useEffect(() => {
-    getBeers(url);
-  }, []);
+    getBeers();
+    let filteredBeerList = beers;
+    if (abv) {
+      filteredBeerList = filteredBeerList.filter((beer) => beer.abv > 6);
+    }
+    if (year) {
+      filteredBeerList = filteredBeerList.filter(
+        (beer) => beer.first_brewed.slice(3) < 2010
+      );
+    }
+    if (acid) {
+      filteredBeerList = filteredBeerList.filter((beer) => beer.ph < 4);
+    }
+    setBeers(filteredBeerList);
+  }, [searchTerm, abv, year, acid, beers]);
+
+  const getAbv = () => {
+    setAbv(!abv);
+  };
+  const getYear = () => {
+    setYear(!year);
+  };
+  const getAcid = () => {
+    setAcid(!acid);
+  };
 
   return (
     <>
@@ -49,11 +64,44 @@ const App = () => {
           <Nav
             handleInput={handleInput}
             searchTerm={searchTerm}
-            handleCheckBox={handleCheckBox}
+            // handleCheckBox={handleCheckBox}
+            getAbv={getAbv}
+            getYear={getYear}
+            getAcid={getAcid}
           />
         </div>
-        <div className="container_beercards">
-          <Beercards beerArr={filteredAlcohol} />
+      </div>
+      <div className="beer">
+        <img className="beer-img" src={main} alt="main" />
+      </div>
+
+      <div className="container_beercards">
+        <Beercards beerArr={filteredAlcohol} />
+      </div>
+      <div className="history">
+        <div className="history-Content">
+          <h1 className="history-Content__Header">
+            MADE IN THE HEART OF SCOTLAND
+          </h1>
+          <p className="history-Content__Para">
+            Made in Scotland, taking four of the finest ingredients; malt, hops,
+            yeast and water, coming together in harmony to create beer for all{" "}
+          </p>
+        </div>
+        <img className="history-Right__Img" src={clockwork} alt="scotland" />
+      </div>
+
+      <div className="sustainable">
+        <img className="sustainable__img" src={scotland} alt="scotland" />
+        <div className="sustainable__content">
+          <h1 className="sustainable__header">
+            COMMITTED TO PEOPLE AND THE PLANET
+          </h1>
+          <h1 className="sustainable__para">
+            We have always worked long-term and sustainably. We are committed to
+            the environment, the business and the people around us. Sustainable
+            work is included in everything we do.
+          </h1>
         </div>
       </div>
     </>

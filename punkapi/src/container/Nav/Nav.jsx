@@ -2,7 +2,7 @@ import "./Nav.scss";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import brewdog from "../../images/brewdog.png";
 
-const Nav = ({ handleInput, searchTerm, handleCheckBox }) => {
+const Nav = ({ handleInput, searchTerm, getAbv, getYear, getAcid }) => {
   return (
     <div className="navigation">
       <div className="checkbox">
@@ -11,8 +11,8 @@ const Nav = ({ handleInput, searchTerm, handleCheckBox }) => {
           <input
             className="checkbox__ABV--check"
             type="checkbox"
-            value="ABV"
-            onChange={handleCheckBox}
+            value="abv"
+            onChange={getAbv}
           />
         </div>
         <div className="checkbox__Classic">
@@ -20,8 +20,8 @@ const Nav = ({ handleInput, searchTerm, handleCheckBox }) => {
           <input
             className="checkbox__Classic--check"
             type="checkbox"
-            value="classic"
-            onChange={handleCheckBox}
+            value="setYear"
+            onChange={getYear}
           />
         </div>
         <div className="checkbox__Ph">
@@ -29,8 +29,8 @@ const Nav = ({ handleInput, searchTerm, handleCheckBox }) => {
           <input
             className="checkbox__Classic--check"
             type="checkbox"
-            value="ph"
-            onChange={handleCheckBox}
+            value="acid"
+            onChange={getAcid}
           />
         </div>
       </div>
