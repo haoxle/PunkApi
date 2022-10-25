@@ -4,9 +4,10 @@ import Beercards from "./container/Beercards/Beercards";
 import Nav from "./container/Nav/Nav";
 import { useState, useEffect } from "react";
 import scotland from "./images/scotland.jpg";
-// import Button from "./components/Button/Button";
+import Button from "./components/Button/Button";
 import clockwork from "./images/clockwork.jpg";
-import main from "./images/main.jpg";
+import main from "./images/main2.jpg";
+import brewdoglogo from "./images/brewdoglogo.png";
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -58,7 +59,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <div className="main">
       <div className="container">
         <div className="container_nav">
           <Nav
@@ -73,6 +74,11 @@ const App = () => {
       </div>
       <div className="beer">
         <img className="beer-img" src={main} alt="main" />
+        <img className="beer-logo" src={brewdoglogo} alt="logo" />
+        <h1 className="beer-title">Changing the world, one glass at a time.</h1>
+        <div className="beer-btn">
+          <Button label="Explore Full Range" />
+        </div>
       </div>
 
       <div className="container_beercards">
@@ -104,7 +110,7 @@ const App = () => {
           </h1>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,23 +1,20 @@
 .beer-container {
-  height: 350px;
-  width: 250px;
-  border: 1px solid red;
+  height: 18vw;
+  width: 14vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-
+  margin: 2px;
   .beer-container__name {
-    font-size: 15px;
-    border: 1px solid green;
+    font-size: 1vw;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    color: black;
   }
-
   .beer-container_pic {
-    height: 100px;
-    width: 50px;
-    border: 1px solid blue;
-  }
-  .beer-container_desc {
-    overflow-y: scroll;
+    height: 10vw;
+    width: 5vw;
+    margin: 10% 0 10% 0;
   }
 }

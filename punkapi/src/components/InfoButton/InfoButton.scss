@@ -1,0 +1,31 @@
+.fill-btn:hover,
+.fill-btn:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+$colors: (
+  fill: #a972cb,
+);
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+.fill {
+  color: var(--color);
+  transition: 0.25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+}

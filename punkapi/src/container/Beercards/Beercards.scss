@@ -1,5 +1,10 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  background-color: #ddb892;
+  height: 80vh;
+  overflow-y: scroll;
+  border: 1px solid black;
 }
