@@ -1,7 +1,7 @@
 .searchBar {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px 5px 0 0;
   background: white;
   position: relative;
   border-radius: 100px;
@@ -20,5 +20,23 @@
   padding-left: 10px;
   border-radius: 100px;
   outline: none;
-  width: 100px;
+  width: 60px;
+}
+
+@media screen and (min-width: 611px) and (max-width: 910px) {
+  .searchBar {
+    margin: 20px 10px 0 0;
+  }
+  .searchBar__input {
+    width: 100px;
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 7000px) {
+  .searchBar {
+    margin: 20px 10px 0 0;
+  }
+  .searchBar__input {
+    width: 150px;
+  }
 }

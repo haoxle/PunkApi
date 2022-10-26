@@ -3,38 +3,39 @@
   justify-content: space-between;
   position: fixed;
   width: 100%;
+  height: 50px;
   z-index: 9;
   background-color: #344e41;
   .navigation__logo {
-    height: 3vw;
-    width: 2vw;
-    margin: 5px 300px 0 0;
+    height: 10vw;
+    width: 8vw;
+    display: none;
   }
   .checkbox {
     display: flex;
     color: black;
-    width: 30%;
+    width: 70%;
     .checkbox__ABV,
     .checkbox__Classic,
     .checkbox__Ph {
       border: 2px solid black;
       display: flex;
       justify-content: space-between;
-      width: 50%;
+      width: 200px;
       background-color: white;
       margin: 4% 1% 0 1%;
       height: 25px;
-      font-size: 0.8vw;
+      font-size: 2.2vw;
       border-radius: 20px;
       font-family: system-ui, sans-serif;
       font-weight: bold;
       gap: 0.5em;
       &--label {
-        margin: 1% 0 0 5%;
+        margin: 5% 0 0 5%;
       }
       &--check {
-        margin-top: 3%;
-        margin-right: 3%;
+        margin-top: 6%;
+        margin-right: 2%;
       }
     }
   }
@@ -70,30 +71,68 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 611px) and (max-width: 910px) {
   .navigation {
+    width: 100%;
+    height: 80px;
     .navigation__logo {
-      height: 9vw;
+      height: 8vw;
       width: 7vw;
-      margin: 5px 80px 0 0;
+      margin-top: 5px;
+      display: block;
     }
     .checkbox {
-      width: 45%;
+      width: 50%;
+      margin-left: 5px;
       .checkbox__ABV,
       .checkbox__Classic,
       .checkbox__Ph {
-        width: 50%;
+        width: 120px;
         margin: 5% 1% 0 1%;
         height: 25px;
-        font-size: 1.25vw;
+        font-size: 1.5vw;
         border-radius: 20px;
         gap: 0.5em;
         &--label {
-          margin: 5% 0 0 5%;
+          margin: 3% 0 0 5%;
         }
         &--check {
-          margin-top: 5%;
-          margin-right: 3%;
+          margin-top: 4%;
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 7000px) {
+  .navigation {
+    width: 100%;
+    height: 80px;
+    .navigation__logo {
+      height: 3vw;
+      width: 2.5vw;
+      margin-left: -60%;
+      margin-top: 10px;
+      display: block;
+    }
+    .checkbox {
+      margin-left: 5px;
+      .checkbox__ABV,
+      .checkbox__Classic,
+      .checkbox__Ph {
+        width: 150px;
+        margin: 2% 1% 0 1%;
+        height: 25px;
+        font-size: 0.75vw;
+        border-radius: 20px;
+        gap: 0.5em;
+        &--label {
+          margin: 0% 0 0 5%;
+        }
+        &--check {
+          margin-top: 3%;
+          margin-right: 2%;
         }
       }
     }

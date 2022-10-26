@@ -20,12 +20,27 @@ $colors: (
   background: none;
   border: 2px solid;
   margin-bottom: 5%;
-  font: inherit;
   line-height: 1;
-  padding: 0.5em 1em;
+  padding: 0.1em 0.75em;
   &:hover,
   &:focus {
     border-color: var(--hover);
     color: #fff;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 910px) {
+  .fill-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 7000px) {
+  .fill-btn {
+    width: 100px;
+    height: 40px;
+    font-size: 0.7vw;
   }
 }

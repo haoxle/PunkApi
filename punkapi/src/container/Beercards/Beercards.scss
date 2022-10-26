@@ -4,13 +4,12 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: #ddb892;
-  height: 80vh;
+  height: 50vh;
   overflow-y: scroll;
   border: 1px solid black;
 }
-
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 911px) and (max-width: 7000px) {
   .main-content {
-    height: 60vh;
+    height: 80vh;
   }
 }
