@@ -68,18 +68,15 @@ const App = () => {
   return (
     <Router>
       <div className="main">
-        <div className="container">
-          <div className="container_nav">
-            <Nav
-              handleInput={handleInput}
-              searchTerm={searchTerm}
-              // handleCheckBox={handleCheckBox}
-              getAbv={getAbv}
-              getYear={getYear}
-              getAcid={getAcid}
-            />
-          </div>
-        </div>
+        <Nav
+          handleInput={handleInput}
+          searchTerm={searchTerm}
+          // handleCheckBox={handleCheckBox}
+          getAbv={getAbv}
+          getYear={getYear}
+          getAcid={getAcid}
+        />
+
         <section>
           <div className="beer">
             <img className="beer-img" src={main} alt="main" />

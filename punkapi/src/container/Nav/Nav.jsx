@@ -34,7 +34,9 @@ const Nav = ({ handleInput, searchTerm, getAbv, getYear, getAcid }) => {
           />
         </div>
       </div>
-      <img className="navigation__logo" src={brewdog} alt="logo" />
+      <div>
+        <img className="navigation__logo" src={brewdog} alt="logo" />
+      </div>
       <SearchBar handleInput={handleInput} searchTerm={searchTerm} />
     </div>
   );

@@ -18,3 +18,20 @@
     margin: 20% 0 0 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .beer-container {
+    height: 30vw;
+    width: 18vw;
+    .beer-container__name {
+      font-size: 1.5vw;
+      letter-spacing: 1px;
+      padding: 0 10px 10px 10px;
+    }
+    .beer-container_pic {
+      height: 15vw;
+      width: 6vw;
+      margin: 20% 0 0 0;
+    }
+  }
+}

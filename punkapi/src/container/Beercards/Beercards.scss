@@ -8,3 +8,9 @@
   overflow-y: scroll;
   border: 1px solid black;
 }
+
+@media screen and (max-width: 992px) {
+  .main-content {
+    height: 60vh;
+  }
+}

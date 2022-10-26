@@ -1,10 +1,14 @@
 .navigation {
   display: flex;
-  height: 100%;
+  justify-content: space-between;
+  position: fixed;
   width: 100%;
+  z-index: 9;
+  background-color: #344e41;
   .navigation__logo {
-    height: 80%;
-    margin: 0.25% 40% 0 20%;
+    height: 3vw;
+    width: 2vw;
+    margin: 5px 300px 0 0;
   }
   .checkbox {
     display: flex;
@@ -64,4 +68,34 @@ input[type="checkbox"]::before {
 
 input[type="checkbox"]:checked::before {
   transform: scale(1);
+}
+
+@media screen and (max-width: 992px) {
+  .navigation {
+    .navigation__logo {
+      height: 9vw;
+      width: 7vw;
+      margin: 5px 80px 0 0;
+    }
+    .checkbox {
+      width: 45%;
+      .checkbox__ABV,
+      .checkbox__Classic,
+      .checkbox__Ph {
+        width: 50%;
+        margin: 5% 1% 0 1%;
+        height: 25px;
+        font-size: 1.25vw;
+        border-radius: 20px;
+        gap: 0.5em;
+        &--label {
+          margin: 5% 0 0 5%;
+        }
+        &--check {
+          margin-top: 5%;
+          margin-right: 3%;
+        }
+      }
+    }
+  }
 }
