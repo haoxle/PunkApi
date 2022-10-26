@@ -4,25 +4,25 @@
 }
 
 $colors: (
-  fill: #a972cb,
+  fill: #344e41,
 );
 
 @each $button, $color in $colors {
   .#{$button} {
     --color: #{$color};
-    --hover: #{adjust-hue($color, 45deg)};
+    --hover: #{$color};
   }
 }
 
-.fill {
+.fill-btn {
   color: var(--color);
   transition: 0.25s;
   background: none;
   border: 2px solid;
+  margin-bottom: 5%;
   font: inherit;
   line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
   &:hover,
   &:focus {
     border-color: var(--hover);

@@ -1,4 +1,4 @@
-.Button {
+.SlideBtn {
   color: white;
   transition: all 0.5s;
   position: relative;
@@ -6,14 +6,14 @@
   height: 50px;
   background-color: black;
 }
-.Button span {
+.SlideBtn span {
   z-index: 2;
   display: block;
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.Button::before {
+.SlideBtn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -25,7 +25,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.Button::after {
+.SlideBtn::after {
   content: "";
   position: absolute;
   top: 0;
@@ -37,11 +37,11 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.Button:hover::before {
+.SlideBtn:hover::before {
   transform: rotate(-45deg);
   background-color: rgba(255, 255, 255, 0);
 }
-.Button:hover::after {
+.SlideBtn:hover::after {
   transform: rotate(45deg);
   background-color: rgba(255, 255, 255, 0);
 }
