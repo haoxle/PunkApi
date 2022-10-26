@@ -20,6 +20,7 @@ $colors: (
   background: none;
   border: 2px solid;
   margin-bottom: 5%;
+  margin-left: 15%;
   line-height: 1;
   padding: 0.1em 0.75em;
   &:hover,
@@ -42,5 +43,6 @@ $colors: (
     width: 100px;
     height: 40px;
     font-size: 0.7vw;
+    margin-left: 23%;
   }
 }

@@ -2,11 +2,18 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+
   flex-wrap: wrap;
   background-color: #ddb892;
   height: 50vh;
   overflow-y: scroll;
   border: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media screen and (min-width: 911px) and (max-width: 7000px) {
   .main-content {
