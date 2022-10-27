@@ -32,11 +32,48 @@
   }
 }
 
-@media screen and (min-width: 911px) and (max-width: 7000px) {
+@media screen and (min-width: 911px) and (max-width: 2400px) {
   .searchBar {
-    margin: 20px 10px 0 0;
+    margin: 1.5% 1% 0 0;
+    border-radius: 100px;
+    height: 2vw;
+  }
+  .searchBar__magnify {
+    object-fit: cover;
+    background: transparent;
+    margin-right: 15px;
+    height: 2vw;
+    padding-top: 2px;
   }
   .searchBar__input {
-    width: 150px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 100px;
+    outline: none;
+    width: 10vw;
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 2401px) and (max-width: 3000px) {
+  .searchBar {
+    margin: 1% 1% 0 0;
+    border-radius: 100px;
+    height: 2vw;
+  }
+  .searchBar__magnify {
+    object-fit: cover;
+    background: transparent;
+    margin-right: 15px;
+    height: 2vw;
+    padding-top: 2px;
+  }
+  .searchBar__input {
+    border: none;
+    padding-left: 10px;
+    border-radius: 100px;
+    outline: none;
+    width: 10vw;
+    font-size: 1vw;
   }
 }

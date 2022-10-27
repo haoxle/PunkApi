@@ -157,7 +157,7 @@
   }
 }
 
-@media screen and (min-width: 911px) and (max-width: 7000px) {
+@media screen and (min-width: 911px) and (max-width: 2400px) {
   .beer {
     margin: 0 0 4% 0;
     width: 100%;
@@ -171,7 +171,7 @@
       width: 400px;
       height: 100px;
       top: 30%;
-      left: 37%;
+      left: 35%;
     }
     .beer-title {
       width: 70%;
@@ -184,6 +184,73 @@
       top: 75%;
       left: 40%;
       font-size: 2vw;
+      letter-spacing: 3px;
+    }
+  }
+
+  .history {
+    margin: 5% 0 5% 0;
+
+    .history-Content {
+      .history-Content__Header {
+        font-size: 2vw;
+        margin: 0 0 0 10%;
+      }
+      .history-Content__Para {
+        font-size: 1vw;
+        width: 80%;
+        margin: 1% 0 0 10%;
+      }
+    }
+    .history-Right__Img {
+      height: 20vw;
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+  .sustainable {
+    width: 100%;
+    &__img {
+      width: 100%;
+      height: 25vw;
+    }
+    &__content {
+      .sustainable__header {
+        margin-top: 10%;
+        font-size: 4vh;
+        letter-spacing: 5px;
+      }
+      .sustainable__para {
+        margin-top: 30px;
+        font-size: 2vh;
+        letter-spacing: 3px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 2401px) and (max-width: 3000px) {
+  .beer {
+    margin: 0 0 4% 0;
+    width: 100%;
+    .beer-img {
+      width: 100%;
+      height: 45vw;
+      object-position: 30% 65%;
+      opacity: 0.9;
+    }
+    .beer-logo {
+      width: 30%;
+      height: 15%;
+      top: 30%;
+      left: 33%;
+    }
+    .beer-title {
+      width: 70%;
+      top: 60%;
+      left: 15%;
+      font-size: 3vw;
       letter-spacing: 3px;
     }
   }
