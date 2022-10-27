@@ -14,7 +14,7 @@ const App = () => {
   const [year, setYear] = useState(false);
   const [acid, setAcid] = useState(false);
 
-  const url = "https://api.punkapi.com/v2/beers";
+  const url = "https://api.punkapi.com/v2/beers?page=2&per_page=70";
   const getBeers = async () => {
     const res = await fetch(url);
     const data = await res.json();

@@ -1,6 +1,5 @@
 import "./Home.scss";
 import scotland from "../../images/scotland.jpg";
-import Button from "../../components/Button/Button";
 import clockwork from "../../images/clockwork.jpg";
 import main from "../../images/main2.jpg";
 import brewdoglogo from "../../images/brewdoglogo.png";
@@ -16,9 +15,7 @@ const Home = ({ filteredAlcohol }) => {
           <h1 className="beer-title">
             Changing the world, one glass at a time.
           </h1>
-          <div className="beer-btn">
-            <Button label="Explore Full Range" />
-          </div>
+          <div className="beer-btn"></div>
         </div>
       </section>
       <section>
