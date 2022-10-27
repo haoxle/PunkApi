@@ -73,11 +73,11 @@ const App = () => {
         />
 
         <Routes>
-          <Route index element={<Home filteredAlcohol={beers} />} />
           <Route
-            path="/beer/:beerId"
-            element={<BeerInfo beersArr={filteredAlcohol} />}
+            path="/"
+            element={<Home filteredAlcohol={filteredAlcohol} />}
           />
+          <Route path="/beer/:beerId" element={<BeerInfo beers={beers} />} />
         </Routes>
       </div>
     </Router>

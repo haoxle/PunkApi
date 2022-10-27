@@ -1,0 +1,72 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20% 50px 50px 50px;
+
+  .info-img {
+    height: 80vw;
+    margin-bottom: 20px;
+  }
+  .info-content {
+    font-size: 17px;
+    .info-content-alcohol {
+      padding: 0px 0 20px 0;
+    }
+  }
+  .info-content__title {
+    font-weight: 800;
+  }
+  .home-button {
+    margin: 6% 0 0 30%;
+  }
+}
+
+@media screen and (min-width: 611px) and (max-width: 910px) {
+  .info {
+    padding: 20% 50px 50px 50px;
+
+    .info-img {
+      height: 70vw;
+      margin-bottom: 20px;
+    }
+    .info-content {
+      font-size: 17px;
+      .info-content-alcohol {
+        padding: 0px 0 20px 0;
+      }
+    }
+    .info-content__title {
+      font-weight: 800;
+    }
+  }
+}
+
+@media screen and (min-width: 911px) and (max-width: 7000px) {
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 50px 50px 50px;
+    height: 70%;
+
+    .info-img {
+      height: 20vw;
+      margin: 0 0 20px 10%;
+    }
+    .info-content {
+      font-size: 17px;
+      margin-left: 10%;
+      margin-right: 2%;
+      .info-content-alcohol {
+        padding: 0px 0 20px 0;
+      }
+    }
+    .info-content__title {
+      font-weight: 800;
+    }
+  }
+}
