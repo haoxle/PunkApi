@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/PunkApi/static/css/main.653c61a0.css",
-    "main.js": "/PunkApi/static/js/main.9f0c16c8.js",
+    "main.js": "/PunkApi/static/js/main.a0007a33.js",
     "static/js/787.056e15b9.chunk.js": "/PunkApi/static/js/787.056e15b9.chunk.js",
     "static/media/main2.jpg": "/PunkApi/static/media/main2.a32f0dca0235b02efabe.jpg",
     "static/media/scotland.jpg": "/PunkApi/static/media/scotland.98c30b92f9cff24b27d9.jpg",
@@ -10,11 +10,11 @@
     "static/media/brewdoglogo.png": "/PunkApi/static/media/brewdoglogo.2f55cad61979a4ec25a3.png",
     "index.html": "/PunkApi/index.html",
     "main.653c61a0.css.map": "/PunkApi/static/css/main.653c61a0.css.map",
-    "main.9f0c16c8.js.map": "/PunkApi/static/js/main.9f0c16c8.js.map",
+    "main.a0007a33.js.map": "/PunkApi/static/js/main.a0007a33.js.map",
     "787.056e15b9.chunk.js.map": "/PunkApi/static/js/787.056e15b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.653c61a0.css",
-    "static/js/main.9f0c16c8.js"
+    "static/js/main.a0007a33.js"
   ]
 }
