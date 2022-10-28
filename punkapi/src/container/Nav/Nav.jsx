@@ -7,30 +7,39 @@ const Nav = ({ handleInput, searchTerm, getAbv, getYear, getAcid }) => {
     <div className="navigation">
       <div className="checkbox">
         <div className="checkbox__ABV">
-          <label className="checkbox__ABV--label">{"Alcohol > 6"}</label>
+          <label htmlFor="abv" className="checkbox__ABV--label">
+            {"Alcohol > 6"}
+          </label>
           <input
             className="checkbox__ABV--check"
             type="checkbox"
             value="abv"
             onChange={getAbv}
+            id="abv"
           />
         </div>
         <div className="checkbox__Classic">
-          <label className="checkbox__Classic--label">Classic</label>
+          <label htmlFor="classic" className="checkbox__Classic--label">
+            Classic
+          </label>
           <input
             className="checkbox__Classic--check"
             type="checkbox"
             value="setYear"
             onChange={getYear}
+            id="classic"
           />
         </div>
         <div className="checkbox__Ph">
-          <label className="checkbox__Classic--label">{"pH < 4"}</label>
+          <label htmlFor="ph" className="checkbox__Classic--label">
+            {"pH < 4"}
+          </label>
           <input
             className="checkbox__Classic--check"
             type="checkbox"
             value="acid"
             onChange={getAcid}
+            id="ph"
           />
         </div>
       </div>

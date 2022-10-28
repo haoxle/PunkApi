@@ -3,7 +3,7 @@ import magnifier from "../../images/magnifier.png";
 const Beercards = (props) => {
   const { searchTerm, handleInput } = props;
   return (
-    <form className="searchBar">
+    <form className="searchBar" name="search">
       <label htmlFor="search"></label>
       <input
         className="searchBar__input"

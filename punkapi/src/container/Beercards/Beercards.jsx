@@ -3,7 +3,7 @@ import Beeritem from "../../components/BeerItem/Beeritem";
 import InfoButton from "../../components/InfoButton/InfoButton";
 import { Link } from "react-router-dom";
 const Beercards = ({ beerArr }) => {
-  const displayBeers = beerArr.map((beer, index) => (
+  const displayBeers = beerArr.map((beer) => (
     <div key={beer.id} className="Container">
       <Beeritem
         name={beer.name}
