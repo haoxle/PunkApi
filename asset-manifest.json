@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/punkapi/static/css/main.653c61a0.css",
-    "main.js": "/punkapi/static/js/main.f17dba0b.js",
-    "static/js/787.056e15b9.chunk.js": "/punkapi/static/js/787.056e15b9.chunk.js",
-    "static/media/main2.jpg": "/punkapi/static/media/main2.a32f0dca0235b02efabe.jpg",
-    "static/media/scotland.jpg": "/punkapi/static/media/scotland.98c30b92f9cff24b27d9.jpg",
-    "static/media/clockwork.jpg": "/punkapi/static/media/clockwork.c264581a8e36fc5cbccc.jpg",
-    "static/media/brewdog.png": "/punkapi/static/media/brewdog.465efa5cab1ef842fb40.png",
-    "static/media/brewdoglogo.png": "/punkapi/static/media/brewdoglogo.2f55cad61979a4ec25a3.png",
-    "index.html": "/punkapi/index.html",
-    "main.653c61a0.css.map": "/punkapi/static/css/main.653c61a0.css.map",
-    "main.f17dba0b.js.map": "/punkapi/static/js/main.f17dba0b.js.map",
-    "787.056e15b9.chunk.js.map": "/punkapi/static/js/787.056e15b9.chunk.js.map"
+    "main.css": "/PunkApi/static/css/main.653c61a0.css",
+    "main.js": "/PunkApi/static/js/main.118df965.js",
+    "static/js/787.056e15b9.chunk.js": "/PunkApi/static/js/787.056e15b9.chunk.js",
+    "static/media/main2.jpg": "/PunkApi/static/media/main2.a32f0dca0235b02efabe.jpg",
+    "static/media/scotland.jpg": "/PunkApi/static/media/scotland.98c30b92f9cff24b27d9.jpg",
+    "static/media/clockwork.jpg": "/PunkApi/static/media/clockwork.c264581a8e36fc5cbccc.jpg",
+    "static/media/brewdog.png": "/PunkApi/static/media/brewdog.465efa5cab1ef842fb40.png",
+    "static/media/brewdoglogo.png": "/PunkApi/static/media/brewdoglogo.2f55cad61979a4ec25a3.png",
+    "index.html": "/PunkApi/index.html",
+    "main.653c61a0.css.map": "/PunkApi/static/css/main.653c61a0.css.map",
+    "main.118df965.js.map": "/PunkApi/static/js/main.118df965.js.map",
+    "787.056e15b9.chunk.js.map": "/PunkApi/static/js/787.056e15b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.653c61a0.css",
-    "static/js/main.f17dba0b.js"
+    "static/js/main.118df965.js"
   ]
 }
