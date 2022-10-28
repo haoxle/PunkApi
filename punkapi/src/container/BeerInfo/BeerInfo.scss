@@ -1,17 +1,19 @@
 .info {
   display: flex;
   flex-direction: column;
-  background-color: white;
   justify-content: center;
+  color: bisque;
   align-items: center;
   padding: 20% 50px 0 50px;
   height: 100%;
   .info-img {
     height: 80vw;
+    padding-top: 8%;
     margin-bottom: 20px;
   }
   .info-content {
     font-size: 17px;
+    padding-top: 10%;
     .info-content-alcohol {
       padding: 0px 0 20px 0;
     }
