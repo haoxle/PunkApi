@@ -71,7 +71,6 @@ const App = () => {
           getYear={getYear}
           getAcid={getAcid}
         />
-
         <Routes>
           <Route
             path="/"
