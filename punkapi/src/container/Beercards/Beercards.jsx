@@ -13,7 +13,7 @@ const Beercards = ({ beerArr }) => {
         brewed={beer.first_brewed}
         pH={beer.ph}
       />
-      <Link to={`/beer/${beer.id}`}>
+      <Link to={`PunkApi/beer/${beer.id}`}>
         <InfoButton label="More Info" />
       </Link>
     </div>

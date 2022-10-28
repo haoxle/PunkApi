@@ -33,7 +33,7 @@ const BeerInfo = ({ beers }) => {
           {food_pairing.join(", ")}
         </p>
         <div className="home-button">
-          <Link to="/">
+          <Link to="PunkApi/">
             <HomeBtn />
           </Link>
         </div>
