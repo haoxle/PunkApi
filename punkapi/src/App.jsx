@@ -3,7 +3,7 @@ import "./App.css";
 import Nav from "./container/Nav/Nav";
 import { useState, useEffect } from "react";
 import Home from "./container/Home/Home";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import BeerInfo from "./container/BeerInfo/BeerInfo";
 
 const App = () => {
