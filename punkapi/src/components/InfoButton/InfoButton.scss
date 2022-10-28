@@ -20,7 +20,7 @@ $colors: (
   background: none;
   border: 2px solid;
   margin-bottom: 5%;
-  margin-left: 15%;
+  margin-left: 17%;
   line-height: 1;
   padding: 0.1em 0.75em;
   &:hover,
@@ -32,18 +32,19 @@ $colors: (
 
 @media screen and (min-width: 611px) and (max-width: 910px) {
   .fill-btn {
-    width: 100px;
-    height: 40px;
+    width: 15vw;
+    height: 3vw;
     font-size: 2vw;
-    margin-left: 28%;
+    margin-left: 25%;
   }
 }
 
 @media screen and (min-width: 911px) and (max-width: 2400px) {
   .fill-btn {
-    width: 100px;
-    height: 40px;
-    font-size: 0.7vw;
+    width: 7vw;
+    height: 3vw;
+    font-size: 0.9vw;
+    font-weight: 600;
     margin-left: 15%;
   }
 }

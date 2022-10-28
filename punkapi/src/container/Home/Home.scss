@@ -10,18 +10,18 @@
     opacity: 0.9;
   }
   .beer-logo {
-    width: 150px;
-    height: 40px;
+    width: 30vw;
+    height: 10vw;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 30%;
     transform: translate(0);
   }
   .beer-title {
-    width: 70%;
+    width: 70vw;
     position: absolute;
-    top: 60%;
-    left: 15%;
+    top: 55%;
+    left: 12%;
     text-align: center;
     font-size: 4vw;
     letter-spacing: 3px;
@@ -115,15 +115,15 @@
       opacity: 0.9;
     }
     .beer-logo {
-      width: 300px;
-      height: 90px;
+      width: 30vw;
+      height: 7vw;
       top: 35%;
-      left: 30%;
+      left: 32%;
     }
     .beer-title {
-      width: 70%;
-      top: 60%;
-      left: 15%;
+      width: 60vw;
+      top: 55%;
+      left: 18%;
       font-size: 3vw;
       letter-spacing: 3px;
     }
@@ -168,15 +168,15 @@
       opacity: 0.9;
     }
     .beer-logo {
-      width: 400px;
-      height: 100px;
-      top: 30%;
+      width: 25vw;
+      height: 7vw;
+      top: 25%;
       left: 35%;
     }
     .beer-title {
-      width: 70%;
-      top: 60%;
-      left: 15%;
+      width: 50vw;
+      top: 55%;
+      left: 23%;
       font-size: 2vw;
       letter-spacing: 3px;
     }
